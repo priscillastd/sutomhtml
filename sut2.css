@@ -1,0 +1,180 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+min-height: 100vh;
+padding: 25px 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #ffeaf4;
+font-family: Arial, sans-serif;
+color: #b64f85;
+}
+
+.jeu {
+width: 100%;
+max-width: 480px;
+padding: 25px 18px;
+text-align: center;
+background: #fff8fc;
+border: 2px solid #f8c9df;
+border-radius: 25px;
+box-shadow: 0 5px 20px #e9b5d0;
+}
+
+h1 {
+margin-top: 0;
+color: #e276ad;
+letter-spacing: 2px;
+}
+
+.description {
+color: #a76b8d;
+}
+
+#grille {
+display: grid;
+gap: 7px;
+justify-content: center;
+margin: 25px auto;
+}
+
+.ligne {
+display: flex;
+gap: 7px;
+}
+
+.case {
+width: 42px;
+height: 42px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid #f3bfd8;
+border-radius: 9px;
+background: white;
+font-size: 19px;
+font-weight: bold;
+}
+
+.bonne {
+background: #ed8fbd;
+border-color: #ed8fbd;
+color: white;
+}
+
+.presente {
+background: #f6c86b;
+border-color: #f6c86b;
+color: white;
+}
+
+.absente {
+background: #d9c5d2;
+border-color: #d9c5d2;
+color: white;
+}
+
+#formulaire {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+input {
+width: 100%;
+padding: 13px;
+border: 2px solid #f3bfd8;
+border-radius: 12px;
+text-align: center;
+font-size: 16px;
+color: #75445c;
+outline: none;
+}
+
+input:focus {
+border-color: #e276ad;
+}
+
+button {
+border: none;
+padding: 12px 20px;
+border-radius: 12px;
+background: #e982b4;
+color: white;
+font-size: 15px;
+cursor: pointer;
+}
+
+button:hover {
+background: #d9659f;
+}
+
+button:disabled {
+opacity: 0.5;
+cursor: not-allowed;
+}
+
+#message {
+min-height: 24px;
+margin: 15px 0;
+font-weight: bold;
+}
+
+#clavier {
+display: flex;
+flex-direction: column;
+gap: 6px;
+margin-top: 20px;
+}
+
+.rangee-clavier {
+display: flex;
+justify-content: center;
+gap: 4px;
+}
+
+.touche {
+flex: 1;
+max-width: 38px;
+padding: 11px 0;
+border-radius: 7px;
+font-weight: bold;
+background: #f7c8df;
+color: #8e456d;
+}
+
+.touche.bonne {
+background: #ed8fbd;
+color: white;
+}
+
+.touche.presente {
+background: #f6c86b;
+color: white;
+}
+
+.touche.absente {
+background: #d9c5d2;
+color: white;
+}
+
+#rejouer {
+margin-top: 15px;
+}
+
+@media (max-width: 360px) {
+.case {
+width: 36px;
+height: 36px;
+}
+
+.touche {
+padding: 10px 0;
+font-size: 12px;
+}
+}
