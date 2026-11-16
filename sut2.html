@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUTOM NEP</title>
+    <link rel="stylesheet" href="sut2.css">
+</head>
+<body>
+
+    <main class="jeu">
+        <h1>SUTOM NEP</h1>
+        <p class="description">Trouve le mot secret en 6 essais.</p>
+        <div id="grille"></div>
+
+        <form id="formulaire">
+            <input
+                id="proposition"
+                type="text"
+                maxlength="7"
+                placeholder="Mot de 7 lettres"
+                autocomplete="off"
+                autocapitalize="characters"
+            >
+			
+
+            <button type="submit" id="valider">Valider</button>
+        </form>
+
+        <p id="message">Niveau de difficulté : simple.</p>
+        <div id="clavier"></div>
+
+        <button id="rejouer" hidden>Rejouer</button>
+    </main>
+	
+    <script src="sut2.js"></script>
+</body>
+</html>
